@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>
+            Topological Entanglement Entropy
+        </title>
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/black.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        
+        <!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section id="title">
+                <h4>Topological Entanglement Entropy</h4> 
+                <h5>in </h5>
+                <h4>Abelian Higher Gauge Theories</h4>
+                <p>
+                    <small> 
+                        <a href="https://github.com/pibieta">J.P. Ibieta-Jimenez</a>
+                        <p>
+                            <small>
+                                 Insituto de Física - Universidade de São Paulo
+                            </small>
+                        </p>
+                    </small>
+                </p>
+                
+                <p><small>USP, September sth,2019.</small></p>
+
+                </section>
+                
+                <section id="outline">
+                    <section>
+                        <h1>Outline</h1>  
+                    </section>
+                    <section>
+                        <h3>Review</h3>
+                        <p>
+                            <ul>
+                                <li>Introduction</li>
+                                <li>Quantum Double Models (QDMs)</li>
+                                <li>Topological Entanglement Entropy (TEE) </li>
+                            </ul>
+                        </p>
+                    </section>
+                    
+                    <section>
+                        <h3>Quantum Models from Gauge Theories</h3>
+                        <p>
+                            <ul>
+                                <li>QDMs as generalized Ising Models</li>
+                                <li>Abelian Higher Gauge Theories in 2D</li>
+                                <li>3D Examples of AHGTs</li>
+                            </ul>
+                        </p>
+                        </section>
+                </section>    
+
+
+            </div>
+                
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>s
+
+    </body>
+
+</html>
