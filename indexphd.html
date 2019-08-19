@@ -69,7 +69,30 @@
                                 <li>3D Examples of AHGTs</li>
                             </ul>
                         </p>
-                        </section>
+                    </section>
+
+                    <section>
+                        <h3>Abelian Higher Gauge Theories</h3>
+                        <p>
+                            <ul>
+                                <li>General Description of the Models</li>
+                                <li>Ground State Degeneracy</li>
+                                <li>Examples</li>
+                            </ul>
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Topological Entanglement Entropy</h3>
+                        <p>
+                            <ul>
+                                <li>Bipartition of the Chain Complex</li>
+                                <li>Reduced Density Matrix</li>
+                                <li>Entanglement Entropy</li>
+                                <li>Examples</li>
+                            </ul>
+                        </p>
+                    </section>
                 </section>    
 
 
@@ -92,8 +115,19 @@
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
+                math: {
+                    // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+						    R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+                    }
+                },
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/math/math.js', async: true },
 					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
