@@ -8,7 +8,7 @@
             Topological Entanglement Entropy
         </title>
         <link rel="stylesheet" href="css/reveal.css">
-        <link rel="stylesheet" href="css/theme/black.css">
+        <link rel="stylesheet" href="css/theme/night.css">
 
         <!-- Theme used for syntax highlighting of code -->
         <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -20,22 +20,22 @@
 			link.type = 'text/css';
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
-        </script>
+        </script>        
     </head>
 
     <body>
         <div class="reveal">
             <div class="slides">
                 <section id="title">
-                <h4>Topological Entanglement Entropy</h4> 
-                <h5>in </h5>
+                <h3>Topological Entanglement Entropy</h3> 
+                <h4>in </h4>
                 <h4>Abelian Higher Gauge Theories</h4>
                 <p>
                     <small> 
                         <a href="https://github.com/pibieta">J.P. Ibieta-Jimenez</a>
                         <p>
                             <small>
-                                 Insituto de Física - Universidade de São Paulo
+                                 Instituto de Física - Universidade de São Paulo
                             </small>
                         </p>
                     </small>
@@ -47,52 +47,115 @@
                 
                 <section id="outline">
                     <section>
-                        <h1>Outline</h1>  
+                        <h2>Outline</h2>  
                     </section>
                     <section>
-                        <h3>Review</h3>
-                        <p>
-                            <ul>
-                                <li>Introduction</li>
-                                <li>Quantum Double Models (QDMs)</li>
-                                <li>Topological Entanglement Entropy (TEE) </li>
-                            </ul>
-                        </p>
-                    </section>
-                    
-                    <section>
-                        <h3>Quantum Models from Gauge Theories</h3>
-                        <p>
-                            <ul>
-                                <li>QDMs as generalized Ising Models</li>
-                                <li>Abelian Higher Gauge Theories in 2D</li>
-                                <li>3D Examples of AHGTs</li>
-                            </ul>
-                        </p>
-                    </section>
+                        <h3>Outline</h3>
+                        <p style="float: left">
+                           <ol>
+                               <li class="fragment"> Review </li>
+                               <ul><small>
+                                    <li class="fragment">Introduction</li>
+                                    <li class="fragment">Quantum Double Models (QDMs)</li>
+                                    <li class="fragment">Topological Entanglement Entropy (TEE) </li>
+                                </small>
+                                </ul>
 
-                    <section>
-                        <h3>Abelian Higher Gauge Theories</h3>
-                        <p>
-                            <ul>
-                                <li>General Description of the Models</li>
-                                <li>Ground State Degeneracy</li>
-                                <li>Examples</li>
-                            </ul>
-                        </p>
-                    </section>
+                                <li class="fragment">Quantum Models from Gauge Theories</li>
+                                        <ul><small>
+                                            <li class="fragment">QDMs as generalized Ising Models</li>
+                                            <li class="fragment">Abelian Higher Gauge Theories in 2D</li>
+                                            <li class="fragment">3D Examples of AHGTs</li>
+                                        </small>
+                                        </ul>
 
-                    <section>
-                        <h3>Topological Entanglement Entropy</h3>
-                        <p>
-                            <ul>
-                                <li>Bipartition of the Chain Complex</li>
-                                <li>Reduced Density Matrix</li>
-                                <li>Entanglement Entropy</li>
-                                <li>Examples</li>
-                            </ul>
+                                <li class="fragment">Abelian Higher Gauge Theories</li>
+                                    <ul><small>
+                                        <li class="fragment">General Description of the Models</li>
+                                        <li class="fragment">Ground State Degeneracy</li>
+                                        <li class="fragment">3D Examples of AHGTs</li>
+                                    </small>
+                                    </ul>
+                                <li class="fragment">Topological Entanglement Entropy</li>
+                                    <ul><small>
+                                        <li class="fragment">Reduced Density Matrix</li>
+                                        <li class="fragment">Entanglement Entropy</li>
+                                        <li class="fragment">Examples</li>
+                                    </small>
+                                </ul>            
+                           </ol> 
                         </p>
                     </section>
+                </section>
+
+                <section id='Review'>
+                        <section>
+                            <h2>Review</h2>  
+                        </section>
+
+                        <section id='Intro_1'>
+                            <div>
+                            <ul>
+                                <li class="fragment"> States of Matter are classfied into phases.</li>
+                                <li class="fragment">Phases of Matter \(\longleftrightarrow\) internal structure (order), <span class="fragment">for instance: </span> </li>
+                                <p class="fragment" style="text-align: center;float: left">
+                                        <img src="figs/solid.png" alt="solid" style="background-color:lightgrey;margin-right: 1%">
+                                        <br> <small><b>Solid</b>: Strongly Correlated. </small>
+                                </p>
+                                <p class="fragment" style="text-align: center;float: right">
+                                        <img src="figs/liquid.png" alt="solid" style="background-color:lightgrey;margin-left: 1%">
+                                        <br> <small><b>Gas</b>: No Correlation among constituents. </small>
+                                </p>
+                            </ul>
+                            <ul>
+                                <li class="fragment"><b>Landau-Ginzburg</b> \(\longrightarrow\) Symmetry Breaking Scheme</li>
+                            </ul>
+                            </div>
+                        </section>
+                        <section id="Intro_2">
+                            <ul>
+                                <li class="fragment">Quantum phases of matter \((T=0)\):</li>
+                                <ul>
+                                    <li class="fragment">Dynamics \(\longrightarrow\) governed by \(H\), exclusively.</li>
+                                    <li class="fragment">Phase transitions \(\longrightarrow\) quantum fluctuations.</li>
+                                    <li class="fragment">\(\Longrightarrow\) <b>Landau Scheme:</b> \((G_{\Psi}, G_{H})\)</li>
+
+                                </ul>
+                                <li class="fragment">There are systems that do <span style="color:springgreen">NOT</span> fit in \((G_{\Psi}, G_{H})\)</li>
+                                <li class="fragment">Example: <i>(Tsui, et. al. '82)</i> <br> 
+                                   <p style="text-align: center"> <span class="fragment"><b>Fractional Quantum Hall Effect</b></span> <br>
+                                    <span class="fragment" style="color:springgreen">(Nobel Prize 2016)</span>
+                                    </p>   
+                                </li>
+                                <li class="fragment">They are called <span style="color: springgreen"> Topological Phases of Matter</span></li>
+                            </ul>
+                        </section>
+                        <section id="Intro_3">
+                            <ul>
+                                <li class="fragment">We focus on <b>Topological Order</b> 
+                                    <small>
+                                    <div class="fragment"><span style="color: springgreen"> Long Range Entanglement</span>  (LRE) </div>
+                                    <div class="fragment"><span style="color: springgreen"> Non- Local</span> order parameters </div>
+                                    <div class="fragment">Observables \(\longleftrightarrow\) <span style="color: springgreen"> Topological Invariants</span></div>
+                                </small>    
+                                </li>
+                                <li class="fragment">
+                                    Some of such Observables:
+                                    <small>
+                                    <div class="fragment">Ground State Degeneracy<span style="color: springgreen"> \(GSD\)</span></div>
+                                    <div class="fragment">Statistics of Excited States \((2+1)D\)</div>
+                                    <div class="fragment">Topological Entanglement Entropy<span style="color: springgreen"> \(TEE\)</span></div>
+                                    </small>
+                                </li>
+                                <li class="fragment">
+                                    Topological order is often studied through lattice models: <br>
+                                    <small>
+                                    <div class="fragment">Quantum Double Models <i>(Kitaev, '97)</i></div>
+                                    <div class="fragment">String Nets <i>(Levin, Wen '06)</i></div>
+                                    </small>
+                                </li>
+                            </ul>
+                        </section>
                 </section>    
 
 
