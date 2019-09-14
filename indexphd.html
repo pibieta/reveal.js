@@ -195,20 +195,89 @@
                     </div>
                 </section>
                 <section id="TC_2">
+                    <div class="paragraph">
+                        <p>Action of local operators:</p>
+                    </div>
                     <div>
                         <p class="fragment" style="text-align: center; font-size: 28px">\(H= -\sum_{v}A_v\) <span class="fragment highlight-green">\(-\sum_{p} B_p\)</span></p>
                     </div>
                     <div>
                         <div class="fragment">
                             <p>
-                                <span class="image"><img src="figs/Bcket1.png" alt="Bcket1" width="250"></span>
-                                <span class="image"><img src="figs/Bcket2.png" alt="Bcket2" width="250"></span>
+                                <span class="image"><img src="figs/Bcket1.png" alt="Bcket1" style="background-color:white;margin-right: 1%" width="300"></span>
+                                <span class="image"><img src="figs/Bcket2.png" alt="Bcket2" style="background-color:white;margin-right: 1%" width="300"></span>
                             </p>
-                            <p class="fragment"> <img src="figs/Bcket3.png" alt="TCBket3" style="background-color:white;margin-right: 1%" width="240"></p>
+                            <p class="fragment"> <img src="figs/Bcket3.png" alt="TCBket3" style="background-color:white;margin-right: 1%" width="290"></p>
                         </div>
-                        <div>
-                            <p class="fragment" style="text-align: center; font-size: 28px">\(H=\) <span class="fragment highlight-green">\(-\sum_{v} A_v\)</span>\(-\sum_{p} B_p\)</p>
-                        </div>
+
+                    </div>
+                </section>
+                <section id="TC_3">
+                    <div class="paragraph">
+                        <p>Action of local operators:</p>
+                    </div>
+                    <div>
+                        <p class="fragment" style="text-align: center; font-size: 28px">\(H=\) <span class="fragment highlight-green">\(-\sum_{v} A_v\)</span>\(-\sum_{p} B_p\)</p>
+                    </div>
+                    <div class="fragment">
+
+                        <p class="fragment"><img src="figs/Avkets1.png" alt="AVkets1" style="background-color:white;margin-right: 1%" height="100"></p>
+                        <p class="fragment"><img src="figs/Avkets2.png" alt="Avkets2" style="background-color:white;margin-right: 1%" height="100"></p>
+                        <p class="fragment">Thus, gauge transformations <b>create</b> loops.</p>
+                    </div>
+                </section>
+                <section id="TC_pause">
+                    <div>
+                        <h3>Ground State(s)</h3>
+                    </div>
+                </section>
+                <section id="TC_GS">
+                    <div>
+                        <p>
+                            <ul>
+                                <li class="fragment"> The ground state subspace \(\mathcal{H}_0 \subset \mathcal{H}\) is characterized by: \[\mathcal{H}_0 = \{\lvert \Psi \rangle \in \mathcal{H} \;\; |\; B_p\lvert \Psi \rangle = \lvert \Psi \rangle,\; A_v \lvert \Psi \rangle=
+                                    \lvert \Psi \rangle,\; \forall v,p \}\]
+                                </li>
+                                <li class="fragment">Closed loop states fullfill the \(B_p\) condition, but not the \(A_v\) one:
+                                </li>
+
+                            </ul>
+                            <p class="fragment">
+                                <span><img src="figs/GS0.png" alt="GS0" style="background-color:white;margin-right: 1%">
+                                    </span>
+                            </p>
+                            <ul>
+                                <li class="fragment">
+                                    A ground state is obtained by applying all gauge transformations:
+                                </li>
+                            </ul>
+                            <p class="fragment">
+                                <span><img src="figs/GSTC.png" alt="GSTC" style="background-color:white;margin-right: 1%">
+                                        </span>
+                            </p>
+                        </p>
+                    </div>
+                </section>
+
+                <section id="TC_GS_2">
+                    <div>
+                        <h3 class="fragment">Are there more ground states?</h3>
+                    </div>
+                    <div>
+                        <p class="fragment" style="font-size: 26px">When the model is defined on the surface of a <b>Torus</b>, there are three additional ground states.</p>
+                        <p class="fragment">
+                            <span style="text-align: center;float: right"><img src="figs/TorusGS.png" alt="GSTC" style="background-color:white;margin-right: 1%">
+                                        </span>
+                            <span style="font-size: 28px">\[\lvert \Psi_1 \rangle = X(C_1) \lvert \Psi_0 \rangle, \]
+                                \[\lvert \Psi_2 \rangle = X(C_2) \lvert \Psi_0 \rangle,\]
+                                \[\lvert \Psi_{1,2} \rangle = X(C_1) X(C_1) \lvert \Psi_0 \rangle,\]</span>
+                        </p>
+                        <p class="fragment"> where \(X(C)= \bigotimes_{i \in C} \sigma_i^x\)</p>
+                    </div>
+                    <div>
+                        <p class="fragment">In general, \(GSD = 2^{2g},\) where \(g\) is the
+                            <b> genus</b> of the manifold.</p>
+                        <p class="fragment ">A <span style="color: springgreen "> TOPOLOGICAL</span> feature.</p>
                     </div>
                 </section>
             </section>
@@ -218,8 +287,8 @@
 
     </div>
 
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.js"></script>
+    <script src="lib/js/head.min.js "></script>
+    <script src="js/reveal.js "></script>
 
     <script>
         // More info https://github.com/hakimel/reveal.js#configuration
