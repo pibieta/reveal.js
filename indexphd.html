@@ -310,8 +310,47 @@
                     </div>
                 </section>
                 <section id="TEE_1">
+                    <div>
+                        <p>Topological order \(\longleftrightarrow\) Long Range <span class="fragment highlight-green"> Entanglement</span></p>
+                        <p class="fragment">How to quantify entanglement within quantum states? </p>
+                        <p class="fragment">Entropy! </p>
 
+                    </div>
+                    <div style="float: left; width: 50%;font-size: 25px">
+
+                        <p class="fragment"> <b>Classical (Shannon) </b>
+                            <p>
+                                <p class="fragment"> \(X = \{x_1, \dots, x_n\}\)
+                                    <span class="fragment">and \(p_i, \, i=1,\dots, n\) their probabilities:</span></p>
+                                <p class="fragment">\(H(X)= - \sum_{i =1}^{n} p_i \log_b(p_i) \)</p>
+
+                                </ul>
+                    </div>
+                    <div style="float: right; width: 50%;font-size: 25px">
+                        <p class="fragment"><b>Quantum (von Neumann)</b></p>
+                        <p class="fragment ">Density matrix \(\rho\) <span class="fragment ">\(\rightarrow\) quantum state</span></p>
+                        <p class="fragment "> \[S(\rho) = - \text{Tr}\left(\rho \log \rho\right)\]</p>
+                    </div>
                 </section>
+
+                <section id="TEE_2">
+                    <h3>Entanglement Entropy</h3>
+                    <br>
+                    <div style="text-align: justify">
+                        <p class="fragment" padding-right:150px>Let \(\rho\) a quantum state on a biparte system </p>
+                        <p class="fragment" style="text-align: center;float: right">
+                            <img src="figs/bipart.png" alt="bipart" style="background-color:#111; border:#111">
+                            <br> <small>Bipartite system</small>
+                        </p>
+                        <p class="fragment">Reduced density matrix: \[\; \rho_A = Tr_B(\rho)\]</p>
+                        <p class="fragment"> von Neumann entropy: \[S_A = S(\rho_A) = -\text{Tr}(\rho_A \log \rho_A)\]</p>
+
+                        <p class="fragment"> \(\rho = \rho_A \otimes \rho_B\) is a product state <span class="fragment" style="color: springgreen ">  \(\Leftrightarrow S_A = 0\)</span></p>
+                        <p class="fragment"> \(\rho\) is entangled <span class="fragment" style="color: springgreen ">  \(\Leftrightarrow S_A > 0\)</span> </p>
+
+                    </div>
+                </section>
+
             </section>
 
 
