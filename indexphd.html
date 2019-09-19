@@ -47,7 +47,7 @@
             </section>
 
             <section id="outline">
-                <section>
+                <section data-background="#4d7e65">
                     <h1>Outline</h1>
                 </section>
                 <section>
@@ -62,16 +62,11 @@
                                 </small>
                             </ul>
 
-                            <li class="fragment">Quantum Models from Gauge Theories</li>
-                            <ul><small>
-                                            <li class="fragment">QDMs as generalized Ising Models</li>
-                                            <li class="fragment">Abelian Higher Gauge Theories in 2D</li>
-                                            <li class="fragment">3D Examples of AHGTs</li>
-                                        </small>
-                            </ul>
+
 
                             <li class="fragment">Abelian Higher Gauge Theories</li>
                             <ul><small>
+                                        <li class="fragment"> Motivation</li>
                                         <li class="fragment">General Description of the Models</li>
                                         <li class="fragment">Ground State Degeneracy</li>
                                         <li class="fragment">3D Examples of AHGTs</li>
@@ -88,7 +83,7 @@
                     </p>
                 </section>
             </section>
-            <section id="Pause_1">
+            <section id="Review" data-background="#4d7e65">
                 <h1>Review</h1>
             </section>
             <section id="TopOrd">
@@ -354,10 +349,10 @@
                 <section id="TEE_3">
                     <h3><span class="fragment highlight-green">Topological</span> Entanglement Entropy</h3>
                     <br>
-                    <div style="text-align: justify">
-                        <p class="fragment" font-size: 28px>" Entanglement entropy of the Toric Code</p>
+                    <div style="text-align: justify;font-size: 26px">
+                        <p class="fragment"> Entanglement entropy of the Toric Code</p>
 
-                        <p class="fragment" style="text-align: center; font-size: 28px">\(H= -\sum_{v}A_v - \sum_{p} B_p\)</p>
+                        <p class="fragment" style="text-align: center">\(H= -\sum_{v}A_v - \sum_{p} B_p\)</p>
                         <p class="fragment">Density matrix: <span class="fragment">\(\;\;\rho = \dfrac{1}{GSD} \Pi_0\)</span></p>
                         <p class="fragment">\(\Pi_0\) is the projector to the ground states: \[\Pi_0 = \prod_v A_v \prod_p B_p\]</p>
                         <p class="fragment" style="text-align: center">\(GSD = \text{tr}\left(\Pi_0\right)\)</p>
@@ -370,9 +365,9 @@
                         <p class="fragment">The reduced density matrix: \(\rho_A = \text{Tr}_B\left(\rho\right)\) </p>
                         <table class="fragment" width="400" border="0" align="right" cellpadding="0" cellspacing="0">
                             <tr>
-                                <td align=”center” valign="top">
+                                <td align=”center” valign="top" style="text-align: center">
                                     <img src="figs/TCEE.png" alt="TCEE" style="background-color:#111; border:#111">
-                                    <br> <small style="align-content: center">Bipartition of the lattice</small>
+                                    <br> <small>Bipartition of the lattice</small>
 
                                 </td>
                             </tr>
@@ -383,12 +378,70 @@
                         <p class="fragment">where each \(g = g_1\otimes g_2\otimes \dots g_{N_l}\) </p>
                         <p class="fragment"> \[g_i = \{\mathbb{1}, \sigma^x, \sigma^z\}\] </p>
                         <p class="fragment"> \[\text{Tr}(\sigma^{x,z}) = 0 \]</p>
-                        <p class="fragment">\(g = g_A \otimes g_B\)</p>
+                        <p class="fragment">Advantage: \(\hbox{ } g = g_A \otimes g_B\)
+                            <span class="fragment"> where \(g_A \in \mathcal{G}_A\)</span></p>
+
+                    </div>
+
+                </section>
+                <section id='TEE_5'>
+                    <div style="text-align: justify;font-size: 24px">
+                        <p>The reduced density matrix: \(\rho_A = \text{Tr}_B\left(\rho\right)\) </p>
+                        <table class="fragment " width="400 " border="0 " align="right " cellpadding="0 " cellspacing="0 ">
+                            <tr>
+                                <td align=”center” valign="top " style="text-align: center ">
+                                    <img src="figs/regionA.png " alt="regiona " style="background-color:#111; border:#111 ">
+                                    <br> <small>Region A</small>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <p class="fragment "> \[\rho_A = \dfrac{1}{\text{dim}\mathcal{H}_A}\sum_{g_A \in \mathcal{G}_A} g_A\]</p>
+                        <p class="fragment "> \[\rho_A^2 = \dfrac{|\mathcal{G}_A|}{\text{dim}\mathcal{H}_A}\, \rho_A\]
+                        </p>
+                        <p class="fragment "> \(\rho_A\) is a <span class="fragment " style="color: springgreen ">mixed state</span> </p>
+                        <p class="fragment "> We can calculate the entanglement entropy:
+                            <span class="fragment "> \[S_A = -\text{Tr} \left(\rho_A \log \rho_A \right)\]</span> </p>
+                        <p class="fragment "> \[S_A = \log \left(\dfrac{\text{dim} \mathcal{H}_A}{|\mathcal{G}_A|} \right) \]</p>
+                    </div>
+                    <div>
+                        <p class="fragment ">\(S_A = \log(2^{4R-1})= 4R - 1\)</p>
+                        <p class="fragment "> Area Law: \(4R\) &nbsp; &nbsp;&nbsp; <span class="fragment " style="color: springgreen "> Topological term: \(-1\)</span> </p>
+
+                    </div>
+
+                </section>
+                <section id="TEE_6">
+                    <div style="text-align: justify;font-size: 28px">
+                        <p class="fragment"> Given a ground state of a quantum many-body system with topological order...</p>
+                        <p class="fragment"> Possibly in any dimension...</p>
+                        <p class="fragment"> Entanglement entropy?</p>
+                        <p class="fragment"> Area Law? &nbsp; &nbsp;&nbsp;<span class="fragment">Topological term? </span></p>
+                        <p class="fragment"> We can (partially) answer this question</p>
+                        <p class="fragment"> Give a closed formula for \(S_A\) <span class="fragment"> for a big class of models with T.O.</span></p>
+                        <p class="fragment" style="text-align: center; font-size: 24px">(In any dimension) </p>
                     </div>
                 </section>
             </section>
 
-
+            <section data-background="#4d7e65" id="HGT">
+                <h2>Abelian Higher Gauge Theories</h2>
+            </section>
+            <section id="HGT">
+                <section id="HGT_intro">
+                    <div>
+                        <h3>Topological Order in 2D </h3>
+                    </div>
+                </section>
+                <section id="Gauge">
+                    <div style="text-align: justify;font-size: 28px">
+                        <p class="fragment"> Toric Code \(\longrightarrow\) QDMs <span class="fragment"> \(\hbox{   }\longrightarrow\) Gauge Theories with \(G\)</span> </p>
+                        <p class="fragment"> Gauge Theories: source of examples for quantum models w/ Topological Order <span class="fragment"> Exactly solvable models</span></p>
+                        <p class="fragment"> Abelian groups \(\longrightarrow\) we were able to construct more general quantum models </p>
+                        <p class="fragment"> </p>
+                    </div>
+                </section>
+            </section>
         </div>
 
     </div>
