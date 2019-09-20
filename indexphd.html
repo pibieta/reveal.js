@@ -664,11 +664,144 @@
                         <p class="fragment"> \[C_3 \xrightarrow{\,\partial_3}C_2 \xrightarrow{\,\partial_2\,}C_1 \xrightarrow{\,\partial_1\,}C_0\,\,\,\,\]</p>
                         <p class="fragment"> Higher Gauge group \(\;\; \longrightarrow\) Chain Complex of Abelian groups<span class="fragment">, for instance:</span></p>
                         <p class="fragment"> \[G_3 \xrightarrow{\,\partial_3}G_2 \xrightarrow{\,\partial_2\,}G_1 \,\,\,\,\]</p>
-                        <p class="fragment"> Gauge configurations, Gauge transformations and Holonomies are encoded in maps between the complexes</p>
+                        <p class="fragment"> Gauge configurations \(\;\;\; \longrightarrow \) maps between the complexes </p>
+                        <p class="fragment" width="300" align="center">
+                            <span><img src="figs/chaincomplex.png" alt="chaincomplex" style="background-color:white;margin-right: 1%">
+                                        </span>
+                        </p>
+                        <p class="fragment"> These maps form a group \(\text{hom}(C,G)^0\)</p>
                     </div>
 
                 </section>
+                <section id="Data_2">
+                    <div style="text-align: justify;font-size: 26px">
+                        <p> Lattice \(\;\;\; \longrightarrow \) Chain Complex \(\; (C(K),\partial)\)</p>
+                        <p> \[C_3 \xrightarrow{\,\partial_3}C_2 \xrightarrow{\,\partial_2\,}C_1 \xrightarrow{\,\partial_1\,}C_0\,\,\,\,\]</p>
+                        <p> Higher Gauge group \(\;\; \longrightarrow\) Chain Complex of Abelian groups<span>, for instance:</span></p>
+                        <p> \[G_3 \xrightarrow{\,\partial_3}G_2 \xrightarrow{\,\partial_2\,}G_1 \,\,\,\,\]</p>
+                        <p class="fragment"> Gauge transformations \(\;\;\; \longrightarrow \) maps between the complexes </p>
+                        <p class="fragment" width="300" align="center">
+                            <span><img src="figs/hom-1.png" alt="hom-1" style="background-color:white;margin-right: 1%">
+                                        </span>
+                        </p>
+                        <p class="fragment"> These maps form a group \(\text{hom}(C,G)^{-1}\)</p>
+                    </div>
+
+                </section>
+                <section id="Data_3">
+                    <div style="text-align: justify;font-size: 26px">
+                        <p> Lattice \(\;\;\; \longrightarrow \) Chain Complex \(\; (C(K),\partial)\)</p>
+                        <p> \[C_3 \xrightarrow{\,\partial_3}C_2 \xrightarrow{\,\partial_2\,}C_1 \xrightarrow{\,\partial_1\,}C_0\,\,\,\,\]</p>
+                        <p> Higher Gauge group \(\;\; \longrightarrow\) Chain Complex of Abelian groups<span>, for instance:</span></p>
+                        <p> \[G_3 \xrightarrow{\,\partial_3}G_2 \xrightarrow{\,\partial_2\,}G_1 \,\,\,\,\]</p>
+                        <p class="fragment"> Holonomy values \(\;\;\; \longrightarrow \) maps between the complexes </p>
+                        <p class="fragment" width="300" align="center">
+                            <span><img src="figs/hom1.png" alt="hom1" style="background-color:white;margin-right: 1%">
+                                        </span>
+                        </p>
+                        <p class="fragment"> These maps form a group \(\text{hom}(C,G)^{1}\) <span class="fragment">not the actual measurement!</span></p>
+                    </div>
+                </section>
+                <section id="Data_4">
+                    <div style="text-align: justify;font-size: 24px">
+                        <p class="fragment">
+                            Turns out that the chain complex </p>
+                        <p class="fragment">
+                            \[\text{hom}(C,G)^{1}\xrightarrow{\delta^{-1}} \text{hom}(C,G)^{0} \xrightarrow{\delta^{0}} \text{hom}(C,G)^{1}\]
+                        </p>
+                        <p class="fragment"> encodes all essential information about the Gauge theory.</p>
+                        <p class="fragment"> where: \(\;\;(\delta^p h)_n = h_{n-1}\circ \partial^C_n - (-1)^p\, \partial_{n-p}^G \circ h_n\) </p>
+                        <p class="fragment"> It Provides the Hilbert space, via elements in \(\text{hom}(C,G)^{0}\), for instance </p>
+                        <p class="fragment"> \[\mathcal{H}= \bigotimes_{v,l,p,c}\mathcal{H}_v\otimes\mathcal{H}_l\otimes\mathcal{H}_p\otimes\mathcal{H}_c\]</p>
+                        <p class="fragment"> Hamiltonian: \[H= - \sum_{n} \sum_{x \in K_n} A_x - \sum_{n}\sum_{y \in K_n}B_y\]</p>
+                    </div>
+                </section>
+                <section id="Data_4">
+                    <div style="text-align: justify;font-size: 24px">
+                        <p>
+                            Turns out that the chain complex </p>
+                        <p>
+                            \[\text{hom}(C,G)^{1}\xrightarrow{\delta^{-1}} \text{hom}(C,G)^{0} \xrightarrow{\delta^{0}} \text{hom}(C,G)^{1}\]
+                        </p>
+                        <p> encodes all essential information about the Gauge theory.</p>
+                        <p> Hamiltonian: \[H= - \sum_{n} \sum_{x \in K_n} A_x - \sum_{n}\sum_{y \in K_n}B_y\] </p>
+                        <p class="fragment"> Ground states: \(\lvert \psi \rangle \in \mathcal{H}\), such that: \(\;\;\;\Pi_0 \lvert \psi \rangle = \lvert \psi \rangle \)</p>
+                        <p class="fragment"> Where: \[\Pi_0 = \prod_n \prod_{x \in K_n} A_x\prod_{y \in K_n}B_y\]</p>
+                        <p class="fragment"> Moreover: \(GSD= \prod_i |H^i(C,H_i(G))|\)</p>
+                        <p class="fragment">\(|H^i(C,H_i(G))|\) are usual cohomology groups. <span class="fragment">\(\;\;H_i(G)\) are the Homology groups of the higher group \(G\)</span>
+                        </p>
+                        <p class="fragment"> Can we find the entanglement entropy? </p>
+                    </div>
+                </section>
+
             </section>
+            <section data-background="#4d7e65" id="EEHGT">
+                <h2>Entanglement Entropy</h2>
+            </section>
+            <section id="EEHGT_">
+                <section id="EEHGT_1">
+                    <h2>Reduced Density Matrix</h2>
+                </section>
+                <section id="EEHGT_2">
+                    <h4>Reduced Density Matrix</h4>
+                    <div style="text-align: justify;font-size: 24px">
+                        <p class="fragment" data-fragment-index="0"> Hamiltonian: \[H= - \sum_{n} \sum_{x \in K_n} A_x - \sum_{n}\sum_{y \in K_n}B_y\] </p>
+                        <table width="300 " border="0 " align="right " cellpadding="0 " cellspacing="0 ">
+                            <tr>
+                                <td class="fragment" data-fragment-index="5" align=”center” valign="top " style="text-align: center ">
+                                    <img src="figs/bipart.png " alt="bipart " style="background-color:#111; border:#111 ">
+                                    <br> <small>Bipartition of the complex</small>
+                                </td>
+
+                            </tr>
+                        </table>
+
+                        <p class="fragment" data-fragment-index="1"> Density matrix: <span class="fragment" data-fragment-index="2">\(\;\;\rho = \dfrac{1}{GSD} \Pi_0\)</span></p>
+                        <p class="fragment" data-fragment-index="3"> Where: \[\Pi_0 = \prod_n \prod_{x \in K_n} A_x\prod_{y \in K_n}B_y\]</p>
+                        <p class="fragment" data-fragment-index="4">The reduced density matrix: \(\;\;\;\;\rho_A = \text{Tr}_B\left(\rho\right)\) </p>
+
+
+                    </div>
+                </section>
+                <section id="HGTEE_2">
+                    <div style="text-align: justify;font-size: 24px">
+                        <p class="fragment">To perform the partial trace, restrict the complex \(C(K)\) to a subcomplex \(C(K_A)\)</p>
+                        <p class="fragment">By doing so, we obtain a restricted version of the gauge theory as well: </p>
+                        <p class="fragment">\[\text{hom}(C_{\tilde{A}},G)^{1}\xrightarrow{\;\delta_{\tilde{A}}^{-1}\;} \text{hom}(C_A,G)^{0} \xrightarrow{\;\delta_A^{0}\;} \text{hom}(C_A,G)^{1}\]</p>
+                        <p class="fragment"> \(\;\;\tilde{A} \;\longrightarrow\) Interior of region A. <span class="fragment">Only <span class="fragment highlight-green" >internal gauge transformations</span> survive the trace</span>
+                        </p>
+                        <p class="fragment">This naturally defines a <span class="fragment highlight-green"> restricted Higher Gauge theory</span> in region \(A\)</p>
+                        <p class="fragment">
+                            \[H_{\tilde{A}} = \sum_{n=0}^{d} \sum_{x\in K_{n,\tilde{A}}}A_{n,x} - \sum_{n=0}^{d} \sum_{y\in K_{n,A}}B_{n,y}.\]
+                        </p>
+                        <p class="fragment">
+                            \[ GSD_{\tilde{A}}= \dfrac{\left|\ker \delta_{A}^0\right|}{\left|\text{Im}\, \delta^{-1}_{\tilde{A}}\right|}. \]
+                        </p>
+                        <p class="fragment">Counts the number of edge states in the entanglement boundary.</p>
+                    </div>
+                </section>
+
+            </section>
+            <section id="HGTEE_f_">
+                <h2>Entanglement Entropy</h2>
+            </section>
+            <section id="HGTEE_final">
+                <section id="HGTEE_end">
+                    <div style="text-align: justify;font-size: 24px">
+                        <p class="fragment">Reduced density matrix: \[\rho_A = \dfrac{1}{\dim(\mathcal{H}_A)}\left(\sum_{p, q }A_{p} B_{q}\right), \] </p>
+                        <p class="fragment">Entanglement Entropy: &nbsp; \(S_A =\text{Tr}(\rho_A \log \rho_A)\)
+                        </p>
+                        <p class="fragment">We need to find \(\rho_A^2\) first:</p>
+                        <p class="fragment">\[\rho_A^2 = \dfrac{1}{GSD_{\tilde{A}}}\; \rho_A\]</p>
+                        <p class="fragment"> Which leaves for the entrop<span class="fragment highlight-green"> \[S_A= \log \left(GSD_{\tilde{A}}\right)\]</span>
+                        </p>
+                        <p class="fragment">where \(GSD_{\tilde{A}}\) counts the number of edge states in the entanglement boundary.</p>
+                    </div>
+                </section>
+            </section>
+            </section>
+
+
         </div>
 
     </div>
