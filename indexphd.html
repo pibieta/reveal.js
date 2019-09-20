@@ -430,17 +430,229 @@
             <section id="HGT">
                 <section id="HGT_intro">
                     <div>
-                        <h3>Topological Order in 2D </h3>
+                        <h3> by Example </h3>
                     </div>
                 </section>
-                <section id="Gauge">
+                <section id="1-Gauge">
                     <div style="text-align: justify;font-size: 28px">
-                        <p class="fragment"> Toric Code \(\longrightarrow\) QDMs <span class="fragment"> \(\hbox{   }\longrightarrow\) Gauge Theories with \(G\)</span> </p>
-                        <p class="fragment"> Gauge Theories: source of examples for quantum models w/ Topological Order <span class="fragment"> Exactly solvable models</span></p>
-                        <p class="fragment"> Abelian groups \(\longrightarrow\) we were able to construct more general quantum models </p>
-                        <p class="fragment"> </p>
+                        <p class="fragment"> Toric Code \(\longrightarrow\) QDMs <span class="fragment"> \(\hbox{   }\longrightarrow\) Lattice Gauge Theories - gauge group \(G\)</span> </p>
+                        <p class="fragment"> Gauge Theories: source of examples for quantum models w/ Topological Order. <span class="fragment"> Exactly solvable models</span></p>
+                        <p class="fragment"> Examples: Twisted QDMs and (3D) 2-Gauge Theories</p>
+                        <p class="fragment"> Abelian groups \(\longrightarrow\) we were able to construct more general quantum models <span class="fragment">\(\hbox{   } \longrightarrow \hbox{  }\)Topological Order</span> </p>
+                        <p class="fragment"> Abelian Higher Gauge Theories... </p>
                     </div>
                 </section>
+                <section id="1-Gauge1">
+                    <h4>QDMs: 1-Gauge Theory</h4>
+                    <div style="text-align: justify;font-size: 26px">
+                        <p class="fragment" data-fragment-index="0"> \(2D\) and \(3D\)</p>
+                        <p class="fragment" data-fragment-index="1">degrees of freedom at links: \(\hbox{ }\mathcal{H}_l=\{\lvert g\rangle\}, \; g \in G_1 \)
+                            <span class="fragment" data-fragment-index="3">\(\;\longrightarrow\;\mathcal{H}=\bigotimes_l\, \mathcal{H}_l \)</span>
+                        </p>
+                        <table width="200 " border="0 " align="right " cellpadding="0 " cellspacing="0 ">
+                            <tr>
+                                <td class="fragment" data-fragment-index="2" align=”center” valign="top " style="text-align: center ">
+                                    <img src="figs/1Gconf.png " alt="1gaugeconf " style="background-color:#111; border:#111 ">
+                                    <br> <small>Gauge configurations</small>
+                                </td>
+
+                            </tr>
+                        </table>
+                        <p class="fragment" data-fragment-index="4">Hamiltonian: \[H= - \sum_v A_v -\sum_p B_p\]</p>
+                        <p class="fragment" data-fragment-index="5"><span class="fragment" data-fragment-index="6">1-</span> Gauge Transformations: \(A_v\)</p>
+                        <table width="400 " border="0 " align="center " cellpadding="0 " cellspacing="0 ">
+                            <td class="fragment" data-fragment-index="7" align=”center” valign="top " style="text-align: center ">
+                                <img src="figs/1Gtrasnf.png" alt="1gaugetransf " style="background-color:#111; border:#111 ">
+                                <br> <small>Located at vertices</small>
+                            </td>
+                            <td class="fragment" data-fragment-index="8" align=”center” valign="top " style="text-align: center ">
+                                <img src="figs/1GtrasnfAct.png" alt="1gaugetransf " style="background-color:#111; border:#111 ">
+                                <br> <small>Act on all adjacent links</small>
+                            </td>
+                        </table>
+                    </div>
+                </section>
+                <section id="1-Gauge2">
+                    <h4>QDMs: 1-Gauge Theory</h4>
+                    <div style="text-align: justify;font-size: 26px">
+                        <p> \(2D\) and \(3D\)</p>
+                        <p>degrees of freedom at links: \(\hbox{ }\mathcal{H}_l=\{\lvert g\rangle\}, \; g \in G_1 \) \(\;\longrightarrow\;\mathcal{H}=\bigotimes_l\, \mathcal{H}_l \)</p>
+                        <table width="200 " border="0 " align="right " cellpadding="0 " cellspacing="0 ">
+                            <tr>
+                                <td align=”center” valign="top " style="text-align: center ">
+
+                                    <img src="figs/1Gconf.png " alt="1gaugeconf " style="background-color:#111; border:#111 ">
+                                    <br> <small>Gauge configurations</small>
+                                </td>
+
+                            </tr>
+                        </table>
+                        <p>Hamiltonian: \[H= - \sum_v A_v -\sum_p B_p\]</p>
+                        <p class="fragment" data-fragment-index="0"><span class="fragment" data-fragment-index="1">1-  </span> Holonomies:<span class="fragment" data-fragment-index="2">\(\hbox{   }\; B_p\)</span></p>
+                        <table width="150 " border="0 " align="center " cellpadding="0 " cellspacing="0 ">
+                            <td class="fragment" data-fragment-index="3" align=”center” valign="top " style="text-align: center ">
+                                <img src="figs/1Ghol.png" alt="1gaugetransf " style="background-color:#111; border:#111 ">
+                                <br> <small>Located at plaquettes</small>
+                            </td>
+                            <!-- <td class="fragment" data-fragment-index="3" align=”center” valign="top " style="text-align: center ">
+                                <img src="figs/1Ghol2.png" alt="1gaugetransf " style="background-color:#111; border:#111 ">
+                                <br> <small>Takes values in \(G_1\)</small>
+                            </td> -->
+                        </table>
+                        <p class="fragment" data-fragment-index="4">\(\text{1-hol}= abcd \in G_1\)</p>
+                    </div>
+                </section>
+                <section id="12-Gauge1">
+                    <h4>1,2-Gauge Theory (3D)</h4>
+
+                    <div style="text-align: justify;font-size: 26px">
+                        <p class="fragment" data-fragment-index="0">degrees of freedom at links: \(\hbox{ }\mathcal{H}_l=\{\lvert g\rangle\}, \; g \in G_1 \) </p>
+                        <p class="fragment" data-fragment-index="1">degrees of freedom at links: \(\hbox{ }\mathcal{H}_p=\{\lvert \alpha\rangle\}, \; \alpha \in G_2 \).</p>
+
+                        <table width="200 " border="0 " align="right " cellpadding="0 " cellspacing="0 ">
+                            <tr>
+                                <td class="fragment" data-fragment-index="2" align=”center” valign="top " style="text-align: center ">
+                                    <span class="fragment" data-fragment-index="3" style="font-size: 24px">\(\mathcal{H}=\bigotimes_l\, \mathcal{H}_l \bigotimes_p\, \mathcal{H}_p \)</span><br>
+                                    <img src="figs/12Gconf.png " alt="1gaugeconf " style="background-color:#111; border:#111 ">
+                                    <br> <small>Gauge configurations</small>
+                                </td>
+
+                            </tr>
+                        </table>
+                        <p class="fragment" data-fragment-index="4">Hamiltonian: \[H= - \sum_v A_v -\sum_l A_l -\sum_p B_p -\sum_c B_c \]</p>
+                        <p class="fragment" data-fragment-index="5"><span class="fragment" data-fragment-index="6">1-</span> Gauge Transformations: \(A_v\)</p>
+                        <table width="400 " border="0 " align="center " cellpadding="0 " cellspacing="0 ">
+                            <td class="fragment" data-fragment-index="7" align=”center” valign="top " style="text-align: center ">
+                                <img src="figs/1Gtrasnf.png" alt="1gaugetransf " style="background-color:#111; border:#111 ">
+                                <br> <small>Located at vertices</small>
+                            </td>
+                            <td class="fragment" data-fragment-index="8" align=”center” valign="top " style="text-align: center ">
+                                <img src="figs/1GtrasnfAct.png" alt="1gaugetransf " style="background-color:#111; border:#111 ">
+                                <br> <small>Act on all adjacent links</small>
+                            </td>
+                        </table>
+                    </div>
+
+                </section>
+                <section id="12-Gauge2">
+                    <h4>1,2-Gauge Theory (3D)</h4>
+
+                    <div style="text-align: justify;font-size: 26px">
+                        <p>degrees of freedom at links: \(\hbox{ }\mathcal{H}_l=\{\lvert g\rangle\}, \; g \in G_1 \) </p>
+                        <p>degrees of freedom at links: \(\hbox{ }\mathcal{H}_p=\{\lvert \alpha\rangle\}, \; \alpha \in G_2 \).</p>
+
+                        <table width="200 " border="0 " align="right " cellpadding="0 " cellspacing="0 ">
+                            <tr>
+                                <td align=”center” valign="top " style="text-align: center ">
+                                    <span style="font-size: 24px">\(\mathcal{H}=\bigotimes_l\, \mathcal{H}_l \bigotimes_p\, \mathcal{H}_p \)</span><br>
+                                    <img src="figs/12Gconf.png " alt="1gaugeconf " style="background-color:#111; border:#111 ">
+                                    <br> <small>Gauge configurations</small>
+                                </td>
+
+                            </tr>
+                        </table>
+                        <p>Hamiltonian: \[H= - \sum_v A_v -\sum_l A_l -\sum_p B_p -\sum_c B_c \]</p>
+                        <p class="fragment" data-fragment-index="0"><span class="fragment" data-fragment-index="1">2-</span> Gauge Transformations: \(A_l\)</p>
+                        <table width="400 " border="0 " align="center " cellpadding="0 " cellspacing="0 ">
+                            <td class="fragment" data-fragment-index="3" align=”center” valign="top " style="text-align: center ">
+                                <img src="figs/12G2trasnf.png" alt="1gaugetransf " style="background-color:#111; border:#111 ">
+                                <br> <small>Located at links</small>
+                            </td>
+                            <td class="fragment" data-fragment-index="4" align=”center” valign="top " style="text-align: center ">
+                                <img src="figs/12G2trasnfAct.png" alt="1gaugetransf " style="background-color:#111; border:#111 ">
+                                <br> <small>Act on all adjacent plaquettes</small>
+                            </td>
+                        </table>
+                    </div>
+
+                </section>
+                <section id="12-Gauge3">
+                    <h4>1,2-Gauge Theory (3D)</h4>
+
+                    <div style="text-align: justify;font-size: 26px">
+                        <p>degrees of freedom at links: \(\hbox{ }\mathcal{H}_l=\{\lvert g\rangle\}, \; g \in G_1 \) </p>
+                        <p>degrees of freedom at links: \(\hbox{ }\mathcal{H}_p=\{\lvert \alpha\rangle\}, \; \alpha \in G_2 \).</p>
+
+                        <table width="200 " border="0 " align="right " cellpadding="0 " cellspacing="0 ">
+                            <tr>
+                                <td align=”center” valign="top " style="text-align: center ">
+                                    <img src="figs/12Gconf.png " alt="1gaugeconf " style="background-color:#111; border:#111 ">
+                                    <br> <small>Gauge configurations</small>
+                                </td>
+
+                            </tr>
+                        </table>
+                        <p>Hamiltonian: \[H= - \sum_v A_v -\sum_l A_l -\sum_p B_p -\sum_c B_c \]</p>
+                        <p class="fragment" data-fragment-index="0"><span class="fragment" data-fragment-index="1">1-</span> Holonomies: \(B_p\)</p>
+                        <table width="400 " border="0 " align="center " cellpadding="0 " cellspacing="0 ">
+                            <td class="fragment" data-fragment-index="3" align=”center” valign="top " style="text-align: center ">
+                                <img src="figs/1Ghol.png" alt="1gaugetransf " style="background-color:#111; border:#111 ">
+                                <br> <small>Located at plaquettes</small>
+                            </td>
+                            <!-- <td class="fragment" data-fragment-index="4" align=”center” valign="top " style="text-align: center ">
+                                <img src="figs/12G2trasnfAct.png" alt="1gaugetransf " style="background-color:#111; border:#111 ">
+                                <br> <small>Act on all adjacent plaquettes</small>
+                            </td> -->
+                        </table>
+                    </div>
+
+                </section>
+                <section id="12-Gauge4">
+                    <h4>1,2-Gauge Theory (3D)</h4>
+
+                    <div style="text-align: justify;font-size: 26px">
+                        <p>degrees of freedom at links: \(\hbox{ }\mathcal{H}_l=\{\lvert g\rangle\}, \; g \in G_1 \) </p>
+                        <p>degrees of freedom at links: \(\hbox{ }\mathcal{H}_p=\{\lvert \alpha\rangle\}, \; \alpha \in G_2 \).</p>
+
+                        <table width="200 " border="0 " align="right " cellpadding="0 " cellspacing="0 ">
+                            <tr>
+                                <td align=”center” valign="top " style="text-align: center ">
+                                    <img src="figs/12Gconf.png " alt="1gaugeconf " style="background-color:#111; border:#111 ">
+                                    <br> <small>Gauge configurations</small>
+                                </td>
+
+                            </tr>
+                        </table>
+                        <p>Hamiltonian: \[H= - \sum_v A_v -\sum_l A_l -\sum_p B_p -\sum_c B_c \]</p>
+                        <p class="fragment" data-fragment-index="0"><span class="fragment" data-fragment-index="1">2-</span> Holonomies: \(B_c\)</p>
+                        <table width="400 " border="0 " align="center " cellpadding="0 " cellspacing="0 ">
+                            <td class="fragment" data-fragment-index="3" align=”center” valign="top " style="text-align: center ">
+                                <img src="figs/12G2hol.png" alt="1gaugetransf " style="background-color:#111; border:#111 ">
+                                <br> <small>Located at plaquettes</small>
+                            </td>
+                            <!-- <td class="fragment" data-fragment-index="4" align=”center” valign="top " style="text-align: center ">
+                                <img src="figs/12G2trasnfAct.png" alt="1gaugetransf " style="background-color:#111; border:#111 ">
+                                <br> <small>Act on all adjacent plaquettes</small>
+                            </td> -->
+                        </table>
+                    </div>
+                </section>
+
+                <section id="HGT_res">
+                    <h4>Our approach</h4>
+                    <div style="text-align: justify;font-size: 26px">
+                        <p class="fragment"> We are able to treat the most general case:</p>
+                        <table width="300 " border="0 " align="right " cellpadding="0 " cellspacing="0 ">
+                            <tr>
+                                <td align=”center” valign="top " style="text-align: center ">
+                                    <img src="figs/GGconf.png " alt="1gaugeconf " style="background-color:#111; border:#111 ">
+                                    <br> <small>Gauge configurations</small>
+                                </td>
+
+                            </tr>
+                        </table>
+                        <p class="fragment">Degrees of freedom at all elements of the lattice</p>
+                        <p class="fragment"> Chain complexes of Abelian groups</p>
+                        <p class="fragment"> Key concepts:</p>
+                        <ul>
+                            <li class="fragment"> Gauge configurations</li>
+                            <li class="fragment"> Gauge Transformations</li>
+                            <li class="fragment"> Holonomies</li>
+                        </ul>
+
+                    </div>
+                </section>
+
             </section>
         </div>
 
@@ -505,7 +717,7 @@
                 async: true
             }]
         });
-    </script>s
+    </script>
 
 </body>
 
