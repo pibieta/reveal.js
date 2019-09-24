@@ -93,7 +93,7 @@
                 <section id="Intro_1">
                     <div style="text-align: justify;font-size: 26px">
                         <ul>
-                            <li class="fragment"> States of Matter are classfied into phases.</li>
+                            <li class="fragment"> States of Matter are classified into phases.</li>
                             <li class="fragment">Phases of Matter \(\longleftrightarrow\) internal structure (order), <span class="fragment">for instance: </span> </li>
                             <p class="fragment" style="text-align: center;float: left">
                                 <img src="figs/solid.png" alt="solid" style="background-color:white;margin-right: 1%">
@@ -118,8 +118,11 @@
                             <li class="fragment" data-fragment-index="2">Dynamics \(\longrightarrow\) governed by \(H\), exclusively.</li>
                             <li class="fragment" data-fragment-index="3"> Phase transitions \(\longrightarrow\) quantum fluctuations.</li>
                             <li class="fragment" data-fragment-index="4">\(\Longrightarrow\) <b>Landau Scheme:</b> \((G_{\Psi}, G_{H})\)</li>
-                            <li class="fragment" data-fragment-index="5">Example: 2D Ising model: </li>
-                            <p class="fragment" data-fragment-index="6" style="margin-top:0.5cm;"> \[H= -J\sum_{i} \sigma^z_{i} \sigma^z_{i+1} - g \sum_{i} \sigma^x_{i}\] </p>
+                            <li class="fragment" data-fragment-index="5">Example: 2D Ising model </li>
+                            <p class="fragment" data-fragment-index="6" style="margin-top:0.5cm;"> \[H= -J\sum_{i} \sigma^z_{i} \sigma^z_{i+1} - h \sum_{i} \sigma^x_{i}\] </p>
+                            <p class="fragment" data-fragment-index="7"> \(h=0: \) (anti-)ferromagnetic phase: &nbsp; <span class="fragment" data-fragment-index="8"> \(GSD = 2\) and <span style="color:springgreen" >NO </span> global \(\mathbb{Z}_2\) symmetry </span>
+                            </p>
+                            <p class="fragment" data-fragment-index="9"> \(h= \infty: \hbox{ } GSD=1 \) and global \(\mathbb{Z}_2\) symmetry </p>
 
                         </ul>
 
@@ -515,7 +518,7 @@
                             </tr>
                         </table>
                         <p>Hamiltonian: \[H= - \sum_v A_v -\sum_p B_p\]</p>
-                        <p class="fragment" data-fragment-index="0"><span class="fragment" data-fragment-index="1">1-  </span> Holonomies:<span class="fragment" data-fragment-index="2">\(\hbox{   }\; B_p\)</span></p>
+                        <p class="fragment" data-fragment-index="0"><span class="fragment" data-fragment-index="1">1-  </span> Holonomies: \(\hbox{ }\; B_p\)</p>
                         <table width="150 " border="0 " align="center " cellpadding="0 " cellspacing="0 ">
                             <td class="fragment" data-fragment-index="3" align=”center” valign="top " style="text-align: center ">
                                 <img src="figs/1Ghol.png" alt="1gaugetransf " style="background-color:#111; border:#111 ">
@@ -534,7 +537,7 @@
 
                     <div style="text-align: justify;font-size: 26px">
                         <p class="fragment" data-fragment-index="0">degrees of freedom at links: \(\hbox{ }\mathcal{H}_l=\{\lvert g\rangle\}, \; g \in G_1 \) </p>
-                        <p class="fragment" data-fragment-index="1">degrees of freedom at links: \(\hbox{ }\mathcal{H}_p=\{\lvert \alpha\rangle\}, \; \alpha \in G_2 \).</p>
+                        <p class="fragment" data-fragment-index="1">degrees of freedom at plaquettes: \(\hbox{ }\mathcal{H}_p=\{\lvert \alpha\rangle\}, \; \alpha \in G_2 \).</p>
 
                         <table width="200 " border="0 " align="right " cellpadding="0 " cellspacing="0 ">
                             <tr>
@@ -855,13 +858,41 @@
                                 </li>
                                 <li class="fragment">1,2-Gauge Theory in 2D with \(G_1=\mathbb{Z}_2\) and \(G_2 = \mathbb{Z}_2\): \[S_A = \partial A\]
                                 </li>
-                                <li class="fragment"> Fracton phases !</li>
 
                         </ul>
                     </div>
                 </section>
             </section>
 
+            <section id="conclusions">
+                <section id="tit">
+                    <h2> Final Remarks</h2>
+                </section>
+
+                <section id="concs_1">
+                    <div style="text-align: justify;font-size: 24px">
+                        <p class="fragment">2D Topological Order is well understood.</p>
+                        <p class="fragment">This is no longer true for higher dimensions.</p>
+                        <p class="fragment">In <span style="color:springgreen"> arxiv:1711.04186 </span> we introduced Abelian Higher Gauge Theories <br>
+                            <span class="fragment">as a tool to explore higher dimensional quantum phases</span> </p>
+                        <p class="fragment">In this work we show that quantum entanglement in this phases can be probed by \(S_A\) </p>
+                        <p class="fragment"> Moreover, it is encoded in:
+                            <span class="fragment"> \[S_A= \log\left(GSD_{\tilde{A}}\right)\]</span><br>
+                            <span class="fragment" style="color: springgreen;align-items: center">arxiv: 1907.01608</span>
+                        </p>
+                        <p> Is this formula valid for other quantum phases?</p>
+                    </div>
+                </section>
+                <section id="future_work">
+                    <h4>Beyond Topological Order</h4>
+                    <div style="text-align: justify;font-size: 24px">
+                        <p class="fragment">More exotic quantum phases, beyond topological order.</p>
+                        <p class="fragment"><span class="fragment"> arxiv: 1908.07601 </span> Fracton-like quantum phases from gauge theories. </p>
+                        <p class="fragment"> \(S_A = \log\left(GSD_{\tilde{A}}\right)\) seems to be valid.</p>
+                        <p class="fragment"> (In preparation) Quantum many-body models sensitive to geometric features of the manifold. </p>
+                    </div>
+                </section>
+            </section>
 
 
             </section>
