@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <title>
-        Topological Entanglement Entropy
+        Entanglement Entropy in Ab. Higher Gauge Theories
     </title>
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/night.css">
@@ -162,6 +162,7 @@
                     <div style="text-align: justify;font-size: 26px;">
                         <p>We focus on <b>Topological Order</b>
                             <ul style="align-items: center;padding-left: 2cm">
+                                <li class="fragment" style="font-size:26px"> Gapped quantum phases</li>
                                 <li class="fragment" style="font-size:26px"><span style="color: springgreen"> Long Range Entanglement</span> (LRE) </li>
                                 <li class="fragment" style="font-size:26px"><span style="color: springgreen"> Non- Local</span> order parameters </li>
                                 <li class="fragment" style="font-size:26px">Observables \(\longleftrightarrow\) <span style="color: springgreen"> Topological Invariants</span></li>
@@ -173,7 +174,7 @@
                         <p class="fragment">
                             Some of such Observables:
                             <ul style="align-items: center;padding-left: 2cm">
-                                <li class="fragment" style="font-size:28px">Topological Ground State Degeneracy<span style="color: springgreen"> \(GSD\)</span></li>
+                                <li class="fragment" style="font-size:28px">Topological Ground State Degeneracy: <span style="color: springgreen"> \(GSD\)</span></li>
                                 <li class="fragment" style="font-size:28px">Statistics of Excited States \((2+1)D\)</li>
                                 <li class="fragment" style="font-size:28px">Topological Entanglement Entropy<span style="color: springgreen"> \(TEE\)</span></li>
                             </ul>
@@ -194,7 +195,7 @@
                 <section id="TC_intro">
                     <div>
                         <h2>Toric Code and QDMs</h2>
-                        <p class="fragment"><small>Simplest examples of lattice models with topological features.</small></p>
+                        <p><small>Simplest examples of lattice models with topological features.</small></p>
                     </div>
                 </section>
                 <section id='TC_1'>
@@ -203,10 +204,10 @@
                         <ul>
                             <li class="fragment"> 2D oriented lattice (discretization of a closed manifold)</li>
                             <p class="fragment" style="text-align: center;float: right">
-                                <img src="figs/latticeQDM.png" alt="Lattice" style="background-color:white;margin-right: 1%">
+                                <img src="figs/latticeQDM.png" alt="Lattice" style="background-color:white;margin-right: 3%">
                                 <br> <small>2D Lattice with local degrees of freedom. </small>
                             </p>
-                            <li class="fragment">Place <b>spins</b> at the edges of the lattice <span class="fragment">\(\mathcal{H}_i = \text{span}(\lvert 1 \rangle),\lvert -1 \rangle)\)</span></li>
+                            <li class="fragment">Place <b>degrees of freedom</b> at links <span class="fragment">\(\mathcal{H}_i = \text{span}(\lvert 1 \rangle),\lvert -1 \rangle)\)</span></li>
                             <li class="fragment">Global Hilbert space: \(\mathcal{H}= \bigotimes_{i} \mathcal{H}_i\)</li>
                             <li class="fragment">Hamiltonian \(H:\mathcal{H}\rightarrow\mathcal{H}\)<br>
                                 <p class="fragment" style="text-align: center; font-size: 28px">\[H= -\sum_{v}A_v - \sum_{p} B_p\]</p>
@@ -316,14 +317,15 @@
                                     <br> <small>2D Lattice with local degrees of freedom. </small>
                                 </p>
                             </li>
-                            <li class="fragment">Place \(\lvert g \rangle\) with <span class="fragment highlight-green">\( g \in G\)</span> at links \(l \in \Lambda_1\)
-                                <span class="fragment">\[\mathcal{H}_i = \{\lvert g \rangle\}\]</span></li>
+                            <li class="fragment">Place \(\lvert g \rangle\) with <span style="color: springgreen">\( g \in G\)</span> at links \(l \in \Lambda_1\)
+                                <span>\[\mathcal{H}_i = \{\lvert g \rangle\}\]</span></li>
 
                             <li class="fragment">Global Hilbert space: \(\mathcal{H}= \bigotimes_{i} \mathcal{H}_i\)</li>
                             <li class="fragment">Hamiltonian \(H:\mathcal{H}\rightarrow\mathcal{H}\)<br>
                                 <p class="fragment" style="text-align: center;">\[H= -\sum_{v}A_v - \sum_{p} B_p\]</p>
                             </li>
                             <li class="fragment"><span style="color: springgreen ">TORIC CODE</span>: \(G = \mathbb{Z}_2\)</li>
+                            <li class="fragment"> Topological \(GSD\)</li>
                             <li class="fragment">Lattice Gauge Theory with gauge group \(G\)</li>
                         </ul>
                     </div>
@@ -333,7 +335,8 @@
             <section id="TopEntEnt">
                 <section id="TEE">
                     <div>
-                        <h2>Topological Entanglement Entropy </h2>
+                        <h2> Entanglement Entropy </h2>
+                        <h3> Topological content</h3>
                     </div>
                 </section>
                 <section id="TEE_1">
@@ -386,12 +389,12 @@
                         <p class="fragment" style="text-align: center">\(H= -\sum_{v}A_v - \sum_{p} B_p\)</p>
                         <p class="fragment">Density matrix: <span class="fragment">\(\;\;\rho = \dfrac{1}{GSD} \Pi_0\)</span></p>
                         <p class="fragment">\(\Pi_0\) is the projector to the ground states: \[\Pi_0 = \prod_v A_v \prod_p B_p\]</p>
-                        <p class="fragment" style="text-align: center">\(GSD = \text{tr}\left(\Pi_0\right)\)</p>
+                        <!-- <p class="fragment" style="text-align: center">\(GSD = \text{tr}\left(\Pi_0\right)\)</p> -->
                     </div>
 
 
                 </section>
-                <section id='TEE_4'>
+                <!-- <section id='TEE_4'>
                     <div style="text-align: justify;font-size: 24px">
                         <p class="fragment">The reduced density matrix: \(\rho_A = \text{Tr}_B\left(\rho\right)\) </p>
                         <table class="fragment" width="400" border="0" align="right" cellpadding="0" cellspacing="0">
@@ -402,35 +405,45 @@
 
                                 </td>
                             </tr>
+                            <table class="fragment fade-out" width="400 " border="0 " align="right " cellpadding="0 " cellspacing="0 ">
+                                <tr>
+                                    <td align=”center” valign="top " style="text-align: center ">
+                                        <img src="figs/regionA.png " alt="regiona " style="background-color:#111; border:#111 ">
+                                        <br> <small>Region A</small>
+
+                                    </td>
+                                </tr>
+                            </table>
                         </table>
                         <p class="fragment"></p>
                         <p class="fragment">To perform the trace:\[\Pi_0 = \prod_v A_v \prod_p B_p = \dfrac{1}{|\mathcal{G}|}\sum_{g \in \mathcal{G}} g\]
                         </p>
                         <p class="fragment">where each \(g = g_1\otimes g_2\otimes \dots g_{N_l}\) </p>
-                        <p class="fragment"> \[g_i = \{\mathbb{1}, \sigma^x, \sigma^z\}\] </p>
-                        <p class="fragment"> \[\text{Tr}(\sigma^{x,z}) = 0 \]</p>
+                        <p class="fragment"> \[g_i = \{\mathbb{1}, \sigma^x, \sigma^z\} \;\;\;\; \text{Tr}(\sigma^{x,z}) = 0 \] </p>
                         <p class="fragment">Advantage: \(\hbox{ } g = g_A \otimes g_B\)
                             <span class="fragment"> where \(g_A \in \mathcal{G}_A\)</span></p>
 
                     </div>
 
-                </section>
+                </section> -->
                 <section id='TEE_5'>
                     <div style="text-align: justify;font-size: 24px">
                         <p>The reduced density matrix: \(\rho_A = \text{Tr}_B\left(\rho\right)\) </p>
-                        <table class="fragment " width="400 " border="0 " align="right " cellpadding="0 " cellspacing="0 ">
+
+
+                        <table class="fragment" width="400" border="0" align="right" cellpadding="0" cellspacing="0">
                             <tr>
-                                <td align=”center” valign="top " style="text-align: center ">
-                                    <img src="figs/regionA.png " alt="regiona " style="background-color:#111; border:#111 ">
-                                    <br> <small>Region A</small>
+                                <td align=”center” valign="top" style="text-align: center">
+                                    <img src="figs/TCEE.png" alt="TCEE" style="background-color:#111; border:#111">
+                                    <br> <small>Bipartition of the lattice</small>
 
                                 </td>
                             </tr>
                         </table>
+
                         <p class="fragment "> \[\rho_A = \dfrac{1}{\text{dim}\mathcal{H}_A}\sum_{g_A \in \mathcal{G}_A} g_A\]</p>
                         <p class="fragment "> \[\rho_A^2 = \dfrac{|\mathcal{G}_A|}{\text{dim}\mathcal{H}_A}\, \rho_A\]
                         </p>
-                        <p class="fragment "> \(\rho_A\) is a <span class="fragment " style="color: springgreen ">mixed state</span> </p>
                         <p class="fragment "> We can calculate the entanglement entropy:
                             <span class="fragment "> \[S_A = -\text{Tr} \left(\rho_A \log \rho_A \right)\]</span> </p>
                         <p class="fragment "> \[S_A = \log \left(\dfrac{\text{dim} \mathcal{H}_A}{|\mathcal{G}_A|} \right) \]</p>
@@ -468,7 +481,7 @@
                     <div style="text-align: justify;font-size: 28px">
                         <p class="fragment"> Toric Code \(\longrightarrow\) QDMs <span class="fragment"> \(\hbox{   }\longrightarrow\) Lattice Gauge Theories - gauge group \(G\)</span> </p>
                         <p class="fragment"> Gauge Theories: source of examples for quantum models w/ Topological Order. <span class="fragment"> Exactly solvable models</span></p>
-                        <p class="fragment"> Examples: Twisted QDMs and (3D) 2-Gauge Theories</p>
+                        <!-- <p class="fragment"> Examples: Twisted QDMs and (3D) 2-Gauge Theories</p> -->
                         <p class="fragment"> Abelian groups \(\longrightarrow\) we were able to construct more general quantum models <span class="fragment">\(\hbox{   } \longrightarrow \hbox{  }\)Topological Order</span> </p>
                         <p class="fragment"> Abelian Higher Gauge Theories... </p>
                     </div>
@@ -552,12 +565,12 @@
                         </table>
                         <p class="fragment" data-fragment-index="4">Hamiltonian: \[H= - \sum_v A_v -\sum_l A_l -\sum_p B_p -\sum_c B_c \]</p>
                         <p class="fragment" data-fragment-index="5"><span class="fragment" data-fragment-index="6">1-</span> Gauge Transformations: \(A_v\)</p>
-                        <table width="400 " border="0 " align="center " cellpadding="0 " cellspacing="0 ">
-                            <td class="fragment" data-fragment-index="7" align=”center” valign="top " style="text-align: center ">
+                        <table class="fragment" data-fragment-index="7" width="400 " border="0 " align="center " cellpadding="0 " cellspacing="0 ">
+                            <td align=”center” valign="top " style="text-align: center ">
                                 <img src="figs/1Gtrasnf.png" alt="1gaugetransf " style="background-color:#111; border:#111 ">
                                 <br> <small>Located at vertices</small>
                             </td>
-                            <td class="fragment" data-fragment-index="8" align=”center” valign="top " style="text-align: center ">
+                            <td align=”center” valign="top " style="text-align: center ">
                                 <img src="figs/1GtrasnfAct.png" alt="1gaugetransf " style="background-color:#111; border:#111 ">
                                 <br> <small>Act on all adjacent links</small>
                             </td>
@@ -694,7 +707,7 @@
                         <p class="fragment"> Lattice \(\;\;\; \longrightarrow \) Chain Complex \(\; (C(K),\partial)\)</p>
                         <p class="fragment"> \[C_3 \xrightarrow{\,\partial_3}C_2 \xrightarrow{\,\partial_2\,}C_1 \xrightarrow{\,\partial_1\,}C_0\,\,\,\,\]</p>
                         <p class="fragment"> Higher Gauge group \(\;\; \longrightarrow\) Chain Complex of Abelian groups<span class="fragment">, for instance:</span></p>
-                        <p class="fragment"> \[G_3 \xrightarrow{\,\partial_3}G_2 \xrightarrow{\,\partial_2\,}G_1 \,\,\,\,\]</p>
+                        <p class="fragment"> \[G_3 \xrightarrow{\,\partial_3}G_2 \xrightarrow{\,\partial_2\,}G_1 \xrightarrow{\,\partial_1\,} G_0 \,\,\,\,\]</p>
                         <p class="fragment"> Gauge configurations \(\;\;\; \longrightarrow \) maps between the complexes </p>
                         <p class="fragment" width="300" align="center">
                             <span><img src="figs/chaincomplex.png" alt="chaincomplex" style="background-color:#111; border:#111 ">
@@ -709,7 +722,7 @@
                         <p> Lattice \(\;\;\; \longrightarrow \) Chain Complex \(\; (C(K),\partial)\)</p>
                         <p> \[C_3 \xrightarrow{\,\partial_3}C_2 \xrightarrow{\,\partial_2\,}C_1 \xrightarrow{\,\partial_1\,}C_0\,\,\,\,\]</p>
                         <p> Higher Gauge group \(\;\; \longrightarrow\) Chain Complex of Abelian groups<span>, for instance:</span></p>
-                        <p> \[G_3 \xrightarrow{\,\partial_3}G_2 \xrightarrow{\,\partial_2\,}G_1 \,\,\,\,\]</p>
+                        <p> \[G_3 \xrightarrow{\,\partial_3}G_2 \xrightarrow{\,\partial_2\,}G_1 \xrightarrow{\,\partial_1\,} G_0 \,\,\,\,\]</p>
                         <p class="fragment"> Gauge transformations \(\;\;\; \longrightarrow \) maps between the complexes </p>
                         <p class="fragment" width="300" align="center">
                             <span><img src="figs/hom-1.png" alt="hom-1" style="background-color:#111; border:#111 ">
@@ -724,7 +737,7 @@
                         <p> Lattice \(\;\;\; \longrightarrow \) Chain Complex \(\; (C(K),\partial)\)</p>
                         <p> \[C_3 \xrightarrow{\,\partial_3}C_2 \xrightarrow{\,\partial_2\,}C_1 \xrightarrow{\,\partial_1\,}C_0\,\,\,\,\]</p>
                         <p> Higher Gauge group \(\;\; \longrightarrow\) Chain Complex of Abelian groups<span>, for instance:</span></p>
-                        <p> \[G_3 \xrightarrow{\,\partial_3}G_2 \xrightarrow{\,\partial_2\,}G_1 \,\,\,\,\]</p>
+                        <p> \[G_3 \xrightarrow{\,\partial_3}G_2 \xrightarrow{\,\partial_2\,}G_1 \xrightarrow{\,\partial_1\,} G_0 \,\,\,\,\]</p>
                         <p class="fragment"> Holonomy values \(\;\;\; \longrightarrow \) maps between the complexes </p>
                         <p class="fragment" width="300" align="center">
                             <span><img src="figs/hom1.png" alt="hom1" style="background-color:#111; border:#111 ">
@@ -771,7 +784,7 @@
                         </span> &nbsp; &nbsp;\(\hbox{ }GSD = \dfrac{|\text{ker}\delta^0|}{|\text{Im} \delta^{-1}|}\)</p>
                         <p class="fragment">\(\text{ker} \delta^0 \;\; \rightarrow\) configurations with trivial holonomy</p>
                         <p class="fragment">\(\text{Im} \delta^{-1} \;\; \rightarrow\) configurations that come from gauge transformations </p>
-                        <p class="fragment"> Moreover: \(\;\;\;\;GSD= \prod_i |H^i(C,H_i(G))|\)</p>
+                        <p class="fragment"> Moreover: \(\;\;\;\;GSD= \prod_i |H^i(C,H_i(G))|\) &nbsp; (R. Brown)</p>
                         <p class="fragment">\(|H^i(C,H_i(G))|\) are usual cohomology groups. </p>
                         <p class="fragment">\(\;\;H_i(G)\) are the Homology groups of the higher group \(G\)</p>
 
@@ -791,7 +804,7 @@
                     <h4>Reduced Density Matrix</h4>
                     <div style="text-align: justify;font-size: 24px">
                         <p class="fragment" data-fragment-index="0"> Hamiltonian: \[H= - \sum_{n} \sum_{x \in K_n} A_x - \sum_{n}\sum_{y \in K_n}B_y\] </p>
-                        <table width="300 " border="0 " align="right " cellpadding="0 " cellspacing="0 ">
+                        <table width="400" border="0 " align="right " cellpadding="0 " cellspacing="0 ">
                             <tr>
                                 <td class="fragment" data-fragment-index="5" align=”center” valign="top " style="text-align: center ">
                                     <img src="figs/TCEE.png " alt="bipart " style="background-color:#111; border:#111 ">
@@ -804,6 +817,7 @@
                         <p class="fragment" data-fragment-index="1"> Density matrix: <span class="fragment" data-fragment-index="2">\(\;\;\rho = \dfrac{1}{GSD} \Pi_0\)</span></p>
                         <p class="fragment" data-fragment-index="3"> Where: \[\Pi_0 = \prod_n \prod_{x \in K_n} A_x\prod_{y \in K_n}B_y\]</p>
                         <p class="fragment" data-fragment-index="4">The reduced density matrix: \(\;\;\;\;\rho_A = \text{Tr}_B\left(\rho\right)\) </p>
+                        <p class="fragment" data-fragment-index="5"> How to perform the partial trace?</p>
 
 
                     </div>
@@ -811,7 +825,7 @@
                 <section id="HGTEE_2">
                     <div style="text-align: justify;font-size: 24px">
                         <p class="fragment">To perform the partial trace, restrict the complex \(C(K)\) to a subcomplex \(C(K_A)\)</p>
-                        <p class="fragment">By doing so, we obtain a restricted version of the gauge theory as well: </p>
+                        <p class="fragment">By doing so, we obtain a restricted version of the gauge theory: </p>
                         <p class="fragment">\[\text{hom}(C_{\tilde{A}},G)^{1}\xrightarrow{\;\delta_{\tilde{A}}^{-1}\;} \text{hom}(C_A,G)^{0} \xrightarrow{\;\delta_A^{0}\;} \text{hom}(C_A,G)^{1}\]</p>
                         <p class="fragment"> \(\;\;\tilde{A} \;\longrightarrow\) Interior of region A. <span class="fragment">Only <span class="fragment highlight-green" >internal gauge transformations</span> survive the trace</span>
                         </p>
@@ -822,7 +836,8 @@
                         <p class="fragment">
                             \[ GSD_{\tilde{A}}= \dfrac{\left|\ker \delta_{A}^0\right|}{\left|\text{Im}\, \delta^{-1}_{\tilde{A}}\right|}. \]
                         </p>
-                        <p class="fragment">Counts the number of edge states in the entanglement boundary.</p>
+                        <p class="fragment">Counts the number of edge states in the entanglement boundary </p>
+                        <p class="fragment"> + topological contributions</p>
                     </div>
                 </section>
 
@@ -832,16 +847,36 @@
                     <h2>Entanglement Entropy</h2>
                 </section>
                 <section id="HGTEE_end">
-                    <h4>Entaglement Entropy</h4>
+                    <h4>Entanglement Entropy</h4>
+                    <div style="text-align: justify;font-size: 24px;line-height: 1.8">
+                        <p class="fragment">Density matrix: \[\rho = \dfrac{1}{GSD}\left(\dfrac{1}{|\text{Im}\delta^{-1}|}\sum_{t }A_{t}\right)\left(\dfrac{1}{|\text{Im}\delta_1|}\sum_{m}B_{m}\right), \] </p>
+                        </p>
+                        <p class="fragment">Reduced density matrix: &nbsp; \(\rho_A = \text{Tr}_B (\rho)\) </p>
+                        <div class="fragment" style="position:relative">
+                            <p class="fragment fade-out" style="position:absolute;top:0;left:30%">\[\rho_A = \dfrac{1}{GSD}\dfrac{\text{Tr}_B (\mathbb{1}_B)}{|\text{Im}\delta^{-1}|\, |\text{Im}\delta_1|}\sum_{p,q}A_p B_q\]</p>
+                            <p class="fragment fade-in" style="position:absolute;top:0;left:30%">\[\rho_A = \dfrac{1}{GSD}\dfrac{\text{dim}(\mathcal{H}_B)}{|\text{Im}\delta^{-1}|\, |\text{Im}\delta_1|}\sum_{p,q}A_p B_q\]</p>
+                        </div><br><br>
+                        <div style="position:relative">
+                            <p class="fragment">After some manipulations: <span class="fragment highlight-green">\[\rho_A = \dfrac{1}{\dim(\mathcal{H}_A)}\left(\sum_{p, q }A_{p} B_{q}\right), \]</span>
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
+                <section id="HGTEE_end">
+                    <h4>Entanglement Entropy</h4>
                     <div style="text-align: justify;font-size: 24px">
                         <p class="fragment">Reduced density matrix: \[\rho_A = \dfrac{1}{\dim(\mathcal{H}_A)}\left(\sum_{p, q }A_{p} B_{q}\right), \] </p>
-                        <p class="fragment">Entanglement Entropy: &nbsp; \(S_A =\text{Tr}(\rho_A \log \rho_A)\)
                         </p>
-                        <p class="fragment">We need to find \(\rho_A^2\) first:</p>
+
                         <p class="fragment">\[\rho_A^2 = \dfrac{1}{GSD_{\tilde{A}}}\; \rho_A\]</p>
-                        <p class="fragment"> Which leaves for the entropy:<span class="fragment highlight-green"> \[S_A= \log \left(GSD_{\tilde{A}}\right)\]</span>
+                        <p class="fragment">Entanglement Entropy: &nbsp; </p>
+
+                        <p class="fragment"><span class="fragment highlight-green"> \[S_A= \log \left(GSD_{\tilde{A}}\right)\]</span>
                         </p>
-                        <p class="fragment">where \(GSD_{\tilde{A}}\) counts the number of edge states in the entanglement boundary.</p>
+                        <p class="fragment">where \(GSD_{\tilde{A}}\) counts the number of edge states in the entanglement boundary <br>
+                            <span class="fragment"> + topological contribution </span>
+                        </p>
                     </div>
                 </section>
             </section>
@@ -851,15 +886,22 @@
                 </section>
                 <section id="HGTEE_ex">
                     <h4>Examples</h4>
-                    <div style="text-align: justify;font-size: 24px">
+                    <div style="text-align: justify;font-size: 24px;  line-height: 2">
 
                         <ul>
-                            <li class="fragment">Toric Code or 1-Gauge theory with \(G_1=\mathbb{Z}_2\): \[S_A = \log\left(GSD_{\tilde{A}}\right)=\log_2 \dfrac{2^{\partial A}}{2} = \partial A -1 \] </p>
-                                <li class="fragment"> 1,2-Gauge Theory in 2D with \(G_1=\mathbb{Z}_2\) and \(G_2 = \mathbb{Z}_4\): \[S_A = \partial A -1 \]
-                                </li>
-                                <li class="fragment">1,2-Gauge Theory in 2D with \(G_1=\mathbb{Z}_2\) and \(G_2 = \mathbb{Z}_2\): \[S_A = \partial A\]
-                                </li>
+                            <li class="fragment" data-fragment-index="0">Toric Code or 1-Gauge theory with \(G_1=\mathbb{Z}_2\): <br>
+                                <span style="padding-left: 3cm">\(S_A = \log\left(GSD_{\tilde{A}}\right)=\log_2 \dfrac{2^{\partial A}}{2} = \partial A\) <span class="fragment highlight-green" data-fragment-index="4">\(-1 \)</span></span>
+                                </p>
 
+                                <li class="fragment" data-fragment-index="1"> 1,2-Gauge Theory in 2D with \(G_1=\mathbb{Z}_2\) and \(G_2 = \mathbb{Z}_4\): <br>
+                                    <span style="padding-left: 6cm">\(S_A = \partial A \)<span class="fragment highlight-green" data-fragment-index="4">\(-1 \)</span></span>
+                                </li>
+                                <li class="fragment" data-fragment-index="2">1,2-Gauge Theory in 2D with \(G_1=\mathbb{Z}_2\) and \(G_2 = \mathbb{Z}_2\): \[S_A = \partial A\]
+                                </li>
+                                <li class="fragment" data-fragment-index="3">1,2,3- Gauge Theory in 3D with \(G_1 = G_2 = G_3 = \mathbb{Z}_4\): <br>
+                                    <span style="padding-left: 6cm">\(S_A = \partial A \)<span class="fragment highlight-green" data-fragment-index="4">\(-1 \)</span></span>
+                                </li>
+                                <li class="fragment" data-fragment-index="4" style="color: springgreen"> Topological terms.</li>
                         </ul>
                     </div>
                 </section>
@@ -876,12 +918,12 @@
                         <p class="fragment">This is no longer true for higher dimensions.</p>
                         <p class="fragment">In <span style="color:springgreen"> arxiv:1711.04186 </span> we introduced Abelian Higher Gauge Theories <br>
                             <span class="fragment">as a tool to explore higher dimensional quantum phases</span> </p>
-                        <p class="fragment">In this work we show that quantum entanglement in this phases can be probed by \(S_A\) </p>
+                        <p class="fragment">In this work we show that quantum entanglement in these phases can be probed by \(S_A\) </p>
                         <p class="fragment"> Moreover, it is encoded in:
                             <span class="fragment"> \[S_A= \log\left(GSD_{\tilde{A}}\right)\]</span><br>
-                            <span class="fragment" style="color: springgreen;align-items: center">arxiv: 1907.01608</span>
+                            <span class="fragment" style="color: springgreen;padding-left: 10cm">arxiv: 1907.01608</span>
                         </p>
-                        <p> Is this formula valid for other quantum phases?</p>
+                        <p class="fragment"> Is this formula valid for other quantum phases?</p>
                     </div>
                 </section>
                 <section id="future_work">
@@ -901,7 +943,10 @@
                     </div>
                 </section>
             </section>
+            <section id="end">
+                <h1>Thanks</h1>
 
+            </section>
 
             </section>
 
@@ -920,6 +965,7 @@
             progress: true,
             history: true,
             center: true,
+            slideNumber: 'c/t',
 
             transition: 'slide', // none/fade/slide/convex/concave/zoom
 
